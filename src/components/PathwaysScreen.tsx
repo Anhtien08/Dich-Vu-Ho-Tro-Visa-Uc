@@ -3,6 +3,7 @@ import { Check, Search, X, ArrowRight, FileText, Clock } from 'lucide-react';
 import { Language, ScreenId, VisaCategory, VisaSubclass } from '../types';
 import { VISA_SUBCLASSES } from '../data/visaData';
 import { ResilientImage } from './ResilientImage';
+import { VisaGrantResultsSection } from './VisaGrantResultsSection';
 
 interface PathwaysScreenProps {
   lang: Language;
@@ -199,6 +200,13 @@ export function PathwaysScreen({
           ))}
         </div>
       )}
+
+      {/* 2 Ảnh Kết Quả Cấp Visa Úc Thực Tế (3 Năm & 10 Năm) */}
+      <VisaGrantResultsSection
+        lang={lang}
+        onStartConsultationForVisa={onStartConsultationForVisa}
+        className="pt-4"
+      />
 
       {/* Pathway Detail Modal / Drawer */}
       {selectedVisa && (

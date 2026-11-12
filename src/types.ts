@@ -70,3 +70,18 @@ export interface ProcessStep {
   title: LocalizedText;
   description: LocalizedText;
 }
+
+export interface GrantResultItem {
+  id: string;
+  badge: LocalizedText;
+  title: LocalizedText;
+  subclass: string;
+  stream: LocalizedText;
+  validity: LocalizedText;
+  entries: LocalizedText;
+  stay: LocalizedText;
+  description: LocalizedText;
+  imageSrc: string;
+  imageAlt: LocalizedText;
+  highlightTag: LocalizedText;
+}

@@ -1,5 +1,6 @@
 import {
   CaseOutcome,
+  GrantResultItem,
   ProcessStep,
   VisaSubclass,
 } from '../types';
@@ -12,6 +13,8 @@ export const ASSETS = {
   skilledEngineering: '/src/assets/images/skilled_engineering_team_1794385492101.jpg',
   leadAdvisor: '/assets/aistudio/image_0d7c8da4.png',
   teamVisa5s: '/assets/aistudio/image_0d7c8da4.png',
+  grantResult3Years: '/assets/aistudio/_c_3_n_m_665ba789.jpg',
+  grantResult10Years: '/assets/aistudio/ucs10_n_m_be916c4e.jpg',
 } as const;
 
 export const BUSINESS_INFO = {
@@ -636,6 +639,91 @@ export const CLIENT_OUTCOMES: CaseOutcome[] = [
     imageAlt: {
       vi: 'Buổi tư vấn và hướng dẫn chuẩn bị hồ sơ Visa Úc tại văn phòng Visa5S',
       en: 'Client consultation and visa documentation review at Visa5S office',
+    },
+  },
+];
+
+export const GRANT_RESULTS: GrantResultItem[] = [
+  {
+    id: 'grant-result-3-years',
+    badge: {
+      vi: 'Visa 600 · 3 Năm Nhiều Lần',
+      en: 'Subclass 600 · 3-Year Multiple Entries',
+    },
+    title: {
+      vi: 'Kết Quả Cấp Visa Úc 3 Năm — Tourist Stream (Subclass 600)',
+      en: 'Official Australian 3-Year Visitor Visa (Subclass 600)',
+    },
+    subclass: 'Visitor (Subclass 600)',
+    stream: {
+      vi: 'Tourist Stream · Du Lịch Úc',
+      en: 'Tourist Stream · Multiple Entries',
+    },
+    validity: {
+      vi: 'Hiệu lực: 3 Năm (11/06/2026 – 11/06/2029)',
+      en: 'Validity: 3 Years (11 June 2026 – 11 June 2029)',
+    },
+    entries: {
+      vi: 'Nhập cảnh: Nhiều lần (Multiple entries)',
+      en: 'Travel: Multiple entries',
+    },
+    stay: {
+      vi: 'Thời gian lưu trú: Tối đa 3 tháng mỗi lần',
+      en: 'Length of stay: 3 months from date of each arrival',
+    },
+    description: {
+      vi: 'Thư cấp thị thực chính thức từ Bộ Nội vụ Úc (Department of Home Affairs). Khách hàng được Visa5S hỗ trợ rà soát lịch trình du lịch, hướng dẫn chuẩn bị giấy tờ công việc, tài chính và ràng buộc chặt chẽ tại Việt Nam.',
+      en: 'Official Department of Home Affairs grant letter. Visa5S assisted client with itinerary planning, proof of employment, funds evidence, and clear Vietnamese home ties.',
+    },
+    imageSrc: ASSETS.grantResult3Years,
+    imageAlt: {
+      vi: 'Thư cấp thị thực Visa Úc 3 năm Subclass 600 chính thức từ Bộ Nội vụ Úc thành công qua Visa5S',
+      en: 'Official Australian 3-Year Subclass 600 Visa grant letter via Visa5S',
+    },
+    highlightTag: {
+      vi: 'Thành Công 3 Năm',
+      en: '3-Year Granted',
+    },
+  },
+  {
+    id: 'grant-result-10-years',
+    badge: {
+      vi: 'Visa 600 · 10 Năm Nhiều Lần',
+      en: 'Subclass 600 · 10-Year Frequent Traveller',
+    },
+    title: {
+      vi: 'Kết Quả Cấp Visa Úc 10 Năm — Frequent Traveller (Subclass 600)',
+      en: 'Official Australian 10-Year Frequent Traveller Visa',
+    },
+    subclass: 'Visitor (Subclass 600)',
+    stream: {
+      vi: 'Frequent Traveller Stream · Du Lịch Thường Xuyên',
+      en: 'Frequent Traveller Stream · 10-Year Multiple',
+    },
+    validity: {
+      vi: 'Hiệu lực: 10 Năm (13/08/2026 – 13/08/2036)',
+      en: 'Validity: 10 Years (13 August 2026 – 13 August 2036)',
+    },
+    entries: {
+      vi: 'Nhập cảnh: Nhiều lần (Multiple entries)',
+      en: 'Travel: Multiple entries',
+    },
+    stay: {
+      vi: 'Thời gian lưu trú: Tối đa 3 tháng mỗi lần',
+      en: 'Length of stay: 3 months from date of each arrival',
+    },
+    description: {
+      vi: 'Hồ sơ Visa Úc 10 năm được Bộ Nội vụ Úc cấp thành công. Visa5S hỗ trợ rà soát kỹ lưỡng lịch sử xuất nhập cảnh quốc tế, chứng minh năng lực tài chính mạnh và chuẩn hóa danh mục hồ sơ chuẩn chỉ.',
+      en: '10-Year Frequent Traveller visa granted by Australian Home Affairs. Visa5S provided meticulous review of global travel history, financial verification, and compliant file compilation.',
+    },
+    imageSrc: ASSETS.grantResult10Years,
+    imageAlt: {
+      vi: 'Kết quả cấp Visa Úc 10 năm nhiều lần Frequent Traveller Subclass 600 thành công từ Visa5S',
+      en: 'Official Australian 10-Year Frequent Traveller Subclass 600 grant letter via Visa5S',
+    },
+    highlightTag: {
+      vi: 'Thành Công 10 Năm',
+      en: '10-Year Granted',
     },
   },
 ];

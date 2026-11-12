@@ -20,6 +20,7 @@ import {
   VISA_SUBCLASSES,
 } from '../data/visaData';
 import { ResilientImage } from './ResilientImage';
+import { VisaGrantResultsSection } from './VisaGrantResultsSection';
 
 interface OverviewScreenProps {
   lang: Language;
@@ -252,6 +253,13 @@ export function OverviewScreen({
         </div>
       </section>
 
+      {/* 2 Ảnh Kết Quả Cấp Visa Úc Thực Tế (3 Năm & 10 Năm) */}
+      <VisaGrantResultsSection
+        lang={lang}
+        onStartConsultationForVisa={onStartConsultationForVisa}
+        sectionNumber="02"
+      />
+
       {/* Quy Trình Hỗ Trợ 5 Bước */}
       <section className="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-16">
         <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-10 shadow-tier-1 space-y-8">
@@ -259,8 +267,8 @@ export function OverviewScreen({
             <div>
               <p className="text-xs font-bold tracking-[0.04em] uppercase text-[#1B1E78] mb-2">
                 {lang === 'vi'
-                  ? '02. Quy Trình Hỗ Trợ Chuẩn Bị Hồ Sơ 5 Bước'
-                  : '02. 5-Step Preparation Workflow'}
+                  ? '03. Quy Trình Hỗ Trợ Chuẩn Bị Hồ Sơ 5 Bước'
+                  : '03. 5-Step Preparation Workflow'}
               </p>
               <h2 className="text-2xl sm:text-3xl font-bold text-[#0F172A] tracking-tight">
                 {lang === 'vi'
@@ -301,8 +309,8 @@ export function OverviewScreen({
           <div className="space-y-2 max-w-3xl">
             <p className="text-xs font-bold tracking-[0.04em] uppercase text-[#1B1E78]">
               {lang === 'vi'
-                ? '03. Hoạt Động Tư Vấn & Chuẩn Bị Hồ Sơ'
-                : '03. Documentation Support Examples'}
+                ? '04. Hoạt Động Tư Vấn & Chuẩn Bị Hồ Sơ'
+                : '04. Documentation Support Examples'}
             </p>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#0F172A] tracking-tight">
               {lang === 'vi'
@@ -388,8 +396,8 @@ export function OverviewScreen({
               <div>
                 <p className="text-xs font-bold tracking-[0.04em] uppercase text-[#1B1E78] mb-2">
                   {lang === 'vi'
-                    ? '04. Minh Bạch Hoạt Động & Pháp Lý'
-                    : '04. Service Transparency & Legal Notice'}
+                    ? '05. Minh Bạch Hoạt Động & Pháp Lý'
+                    : '05. Service Transparency & Legal Notice'}
                 </p>
                 <h2 className="text-2xl sm:text-3xl font-bold text-[#0F172A] tracking-tight">
                   {SERVICE_DISCLOSURE.title[lang]}
